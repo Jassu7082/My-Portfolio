@@ -10,7 +10,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex items-center justify-between px-4 py-4 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
+    <div className="flex relative md:absolute items-center justify-between px-4 py-4 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
       <div className="flex items-center gap-2 "> 
 
         {/* Logo */}
@@ -47,12 +47,12 @@ const Navbar = () => {
 
       {/* Sidebar (visible on mobile when toggled) */}
       {showSidebar && (
-        <div className="lg:hidden absolute top-0 left-0 w-full h-full bg-gray-100 bg-opacity-50 z-10">
-          <div className="absolute top-0 left-0 w-64 h-full bg-white shadow-lg">
+        <div className="lg:hidden  absolute top-0 right-0 w-full h-full bg-gray-100 bg-opacity-50 z-10">
+          <div className="absolute top-0 right-0 w-64 h-full bg-white shadow-lg">
             <div className="flex justify-between items-center px-4 py-2">
               <h2 className="text-lg font-semibold">Menu</h2>
               <button onClick={toggleSidebar}>
-                <FaTimes className="text-gray-700 dark:text-gray-300" />
+                <FaTimes className="text-gray-700 text-black " />
               </button>
             </div>
             <nav className="flex flex-col py-4 gap-4 ml-4 space-y-2">

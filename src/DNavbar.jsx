@@ -1,14 +1,79 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaBars, FaHome, FaBriefcase, FaCode, FaEnvelope, FaTimes } from 'react-icons/fa';
+import logo from './assets/logo.png';
 
 const Navbar = () => {
-    return (
-    <div class="py-4 border-b border-slate-900/10 lg:px-8 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
-    <div class="flex items-center justify-between">
-    <p class="text-6xl font-bold text-slate-900 dark:text-slate-100 md:text-2xl sm:text-2xl">Jaswanth.dev</p>
+  const [showSidebar, setShowSidebar] = useState(false);
 
+  const toggleSidebar = () => {
+    setShowSidebar(!showSidebar);
+  };
+
+  return (
+    <div className="flex items-center justify-between px-4 py-4 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
+      <div className="flex items-center gap-2 "> 
+
+        {/* Logo */}
+        <img className="border h-12 w-12 rounded-full" src={logo} alt="Logo" />
+        {/* Name */}
+        <p className="text-2xl font-bold text-slate-900 dark:text-slate-100 ">Jaswanth.dev</p>
+      </div>
+
+      {/* Sidebar Toggle Button (visible on mobile) */}
+      <div className="lg:hidden">
+  {!showSidebar && (
+    <button onClick={toggleSidebar}>
+      <FaBars className="text-gray-700 dark:text-gray-300" />
+    </button>
+  )}
+</div>
+
+
+      {/* Navbar Links (visible on larger screens) */}
+      <nav className="hidden lg:flex gap-4 lg:space-x-4">
+        <a href="#Home" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+          <FaHome className="mr-2" /> Home
+        </a>
+        <a href="#Project" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+          <FaBriefcase className="mr-2" /> Projects
+        </a>
+        <a href="#Tech" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+          <FaCode className="mr-2" /> Tech
+        </a>
+        <a href="#Contact" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+          <FaEnvelope className="mr-2" /> Contact
+        </a>
+      </nav>
+
+      {/* Sidebar (visible on mobile when toggled) */}
+      {showSidebar && (
+        <div className="lg:hidden absolute top-0 left-0 w-full h-full bg-gray-100 bg-opacity-50 z-10">
+          <div className="absolute top-0 left-0 w-64 h-full bg-white shadow-lg">
+            <div className="flex justify-between items-center px-4 py-2">
+              <h2 className="text-lg font-semibold">Menu</h2>
+              <button onClick={toggleSidebar}>
+                <FaTimes className="text-gray-700 dark:text-gray-300" />
+              </button>
+            </div>
+            <nav className="flex flex-col py-4 gap-4 ml-4 space-y-2">
+              <a href="#Home" className="flex items-center text-gray-700 hover:text-gray-900">
+                <FaHome className="mr-2" /> Home
+              </a>
+              <a href="#Project" className="flex items-center text-gray-700 hover:text-gray-900">
+                <FaBriefcase className="mr-2" /> Projects
+              </a>
+              <a href="#Tech" className="flex items-center text-gray-700 hover:text-gray-900">
+                <FaCode className="mr-2" /> Tech
+              </a>
+              <a href="#Contact" className="flex items-center text-gray-700 hover:text-gray-900">
+                <FaEnvelope className="mr-2" /> Contact
+              </a>
+            </nav>
+          </div>
+        </div>
+      )}
     </div>
-    </div>
-    );
+  );
 }
 
 export default Navbar;

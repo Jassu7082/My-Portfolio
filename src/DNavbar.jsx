@@ -29,7 +29,7 @@ const Navbar = () => {
         <a href="#Home" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
           <FaHome className="mr-2" /> Home
         </a>
-        <a href="#Project" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="#Projects" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
           <FaBriefcase className="mr-2" /> Projects
         </a>
         <a href="#Tech" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
@@ -54,7 +54,7 @@ const Navbar = () => {
               <a href="#Home" className="flex items-center text-gray-700 hover:text-gray-900">
                 <FaHome className="mr-2" /> Home
               </a>
-              <a href="#Project" className="flex items-center text-gray-700 hover:text-gray-900">
+              <a href="#Projects" className="flex items-center text-gray-700 hover:text-gray-900">
                 <FaBriefcase className="mr-2" /> Projects
               </a>
               <a href="#Tech" className="flex items-center text-gray-700 hover:text-gray-900">

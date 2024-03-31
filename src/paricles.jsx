@@ -4,7 +4,7 @@ import Particles from 'react-tsparticles';
 const ParticleBackground = () => {
   return (
     <Particles
-      className='z-1'
+      className='z-100'
       id="tsparticles"
       options={{
         particles: {

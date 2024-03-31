@@ -10,16 +10,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex relative md:absolute items-center justify-between px-4 py-4 border-b border-slate-900/10 lg:border-0 dark:border-slate-300/10 mx-4 lg:mx-0">
-      <div className="flex items-center gap-2 "> 
-
-        {/* Logo */}
+    <div className="flex dark:bg-slate-900 z-10 items-center justify-between px-4 sticky top-0 py-4 lg:border-0 dark:border-slate-300/10 lg:mx-0">
+      <div className="flex items-center gap-2 pl-12"> 
         <img className="border h-12 w-12 rounded-full" src={logo} alt="Logo" />
-        {/* Name */}
         <p className="text-2xl font-bold text-slate-900 dark:text-slate-100 ">Jaswanth.dev</p>
       </div>
-
-      {/* Sidebar Toggle Button (visible on mobile) */}
       <div className="lg:hidden">
   {!showSidebar && (
     <button onClick={toggleSidebar}>

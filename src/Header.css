@@ -17,3 +17,20 @@
     animation-fill-mode: forwards;
     animation-duration: 1s;
 }
+
+.dont_need {
+    display: block; /* or any other display property you need */
+  }
+  
+  /* Media query for mobile screens */
+  @media only screen and (max-width: 767px) {
+    .dont_need {
+      display: none;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .making {
+      transform: translate(10%, 0%); /* Center the div */
+    }
+  }

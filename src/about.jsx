@@ -2,14 +2,14 @@ import React from 'react';
 import './about.css';
 const About = () => {
     return (
-        <div className="flex justify-center items-center h-screen">
-                <div class="pyramid-loader">
-                    <div class="wrapper z-[-1]">
-                        <span class="side side1"></span>
-                        <span class="side side2"></span>
-                        <span class="side side3"></span>
-                        <span class="side side4"></span>
-                        <span class="shadow1"></span>
+        <div className="flex justify-center items-center h-screen ">
+                <div className="pyramid-loader dont_need">
+                    <div className="wrapper ">
+                        <span className="side side1"></span>
+                        <span className="side side2"></span>
+                        <span className="side side3"></span>
+                        <span className="side side4"></span>
+                        <span className="shadow1"></span>
                     </div>
                 </div>
             <div className="text-center relative absolute w-[50%]">
@@ -17,7 +17,7 @@ const About = () => {
                 <p className="text-lg">
                     A dedicated Mern Stack
                     Developer
-                    Allow me to introduce myself—I am an aspiring computer science and
+                    Allow me to introduce myself <br></br>I am an aspiring computer science and
                     engineering student currently pursuing a Bachelor of Technology degree at <b>SVNIT</b>. <br></br>My passion lies in the realm of full stack web development. </p>
 
             </div>

@@ -9,7 +9,7 @@ import tailwindIcon from "./assets/tailwindcss_icon.png";
 import reactIcon from "./assets/react.png";
 import mongodbIcon from "./assets/mongodb.png";
 import nodeIcon from "./assets/node.png";
-import firebaseIcon from "./assets/firebase_icon.png";
+import firebaseIcon from "./assets/firebase_icon.webp";
 import mysqlIcon from "./assets/mysql_icon.png";
 import gitIcon from "./assets/git_icon.png";
 
@@ -51,14 +51,14 @@ const TechnologyCard = ({ name, imageSrc, altText, color }) => {
                     <img
                         alt={altText}
                         loading="lazy"
-                        width="30"
-                        height="30"
+                        width="40"
+                        height="40"
                         decoding="async"
                         data-nimg="1"
                         className="duration-500 ease-in-out hover:scale-105"
                         src={imageSrc}
                     />
-                    <div>{name}</div>
+                    {/* <div>{name}</div> */}
                 </div>
             </div>
         </div>
@@ -66,7 +66,7 @@ const TechnologyCard = ({ name, imageSrc, altText, color }) => {
   };
 const TechnologiesContainer = () => {
   return (
-    <div id="tech" className="flex flex-col items-center">
+    <div id="Tech" className="flex flex-col items-center">
       <div style={{ opacity: 0.975698, transform: 'none' }}>
         <div className="flex w-fit justify-center bg-[#ffffff] bg-opacity-[0.16] py-2 px-6 rounded-3xl hover:border-zinc-500 transition-all duration-300 ease-in-out my-[80px] border-[1.5px] border-[#515151] backdrop-filter backdrop-blur-2xl">
           <div className="flex justify-center items-center gap-2">

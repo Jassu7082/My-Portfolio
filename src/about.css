@@ -69,3 +69,14 @@
     transform: rotateX(90deg) translateZ(-40px);
     filter: blur(12px);
   }
+  .dont_need {
+    display: block; /* or any other display property you need */
+  }
+  
+  /* Media query for mobile screens */
+  @media only screen and (max-width: 767px) {
+    .dont_need {
+      display: none;
+    }
+  }
+  

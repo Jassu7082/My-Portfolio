@@ -10,15 +10,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex border-b-2 border-white dark:bg-slate-900 z-10 items-center justify-between px-4 sticky top-0 py-4 dark:border-slate-300/10 lg:mx-0">
+    <div className="flex border-b-2 border-white bg-slate-900 z-10 items-center justify-between px-4 sticky top-0 py-4 border-slate-300/10 lg:mx-0">
       <div className="flex items-center gap-2 pl-12"> 
         <img className="border h-12 w-12 rounded-full" src={logo} alt="Logo" />
-        <p className="text-2xl font-bold text-slate-900 dark:text-slate-100 ">Jaswanth.dev</p>
+        <p className="text-2xl font-bold text-slate-900 text-slate-100 ">Jaswanth.dev</p>
       </div>
       <div className="lg:hidden">
   {!showSidebar && (
     <button onClick={toggleSidebar}>
-      <FaBars className="text-gray-700 dark:text-gray-300" />
+      <FaBars className="text-gray-700 text-gray-300" />
     </button>
   )}
 </div>
@@ -26,16 +26,16 @@ const Navbar = () => {
 
       {/* Navbar Links (visible on larger screens) */}
       <nav className="hidden lg:flex gap-4 lg:space-x-4">
-        <a href="#Home" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="#Home" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
           <FaHome className="mr-2" /> Home
         </a>
-        <a href="#Projects" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="#Projects" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
           <FaBriefcase className="mr-2" /> Projects
         </a>
-        <a href="#Tech" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="#Tech" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
           <FaCode className="mr-2" /> Tech
         </a>
-        <a href="#Contact" className="flex items-center text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100">
+        <a href="#Contact" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
           <FaEnvelope className="mr-2" /> Contact
         </a>
       </nav>

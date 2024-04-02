@@ -24,7 +24,7 @@ const Header = () => {
         <div id="Home" className="responsive">
             <div className='w-[55%]'>
                 <p className=" font-display inline-block md:text-2xl text-lg">Hi There, I'm <b>Jaswanth</b>.</p>
-                <h1 className="my-6 font-display text-4xl md:text-6xl font-bold text-slate-900 dark:text-slate-100">
+                <h1 className="my-6 font-display text-4xl md:text-6xl font-bold text-slate-900 text-slate-100">
                     <span ref={titleSpan}></span>
                 </h1>
             <p className="relative  absolute mb-8 font-display inline-block md:text-2xl text-lg">always looking to Collaborate with<br></br> others to expand my skills <a href="#about" className='text-orange-400'>..read more.</a></p>

@@ -2,7 +2,7 @@ import React from 'react';
 import logo from "../../assets/logo.png"
 const ContactFooter = () => {
     return (
-        <footer className="bg-white dark:bg-gray-600 mt-10">
+        <footer className="bg-gray-600 mt-10">
             <div className="mx-auto w-full max-w-screen-xl p-6">
                 <div className="flex justify-center">
                     <div className="">

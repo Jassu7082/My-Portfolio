@@ -4,8 +4,8 @@ const Wallpaper = () => {
   const items = Array.from({ length: 21 }, (_, index) => index);
 
   return (
-    <div className="wallpaper z-[-1] justify-center item-center">
-      <div className="container1">
+    <div className="wallpaper justify-center item-center"  style={{ width: '120px', height: '300px' }}>
+      <div className="container1" style={{ }}>
         {items.map((item, index) => (
           <div
             key={index}

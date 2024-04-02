@@ -35,7 +35,7 @@ const TechnologyCard = ({ name, imageSrc, altText, color }) => {
         <div className="popover-container">
             <div className="hover-element">
                 <div
-                    className={`flex justify-center items-center flex-col sm:p-4 sm:w-[80px] sm:h-[80px] w-[70px] h-[70px] p-2 bg-zinc-900 sm:rounded-[15px] rounded-[12px] duration-500 ease-in-out cursor-pointer border-2 border-gray-600`}
+                    className={`flex justify-center items-center flex-col sm:p-4 sm:w-[80px] sm:h-[80px] w-[70px] h-[70px] p-2 bg-zinc-900 sm:rounded-[15px] rounded-[12px] duration-500 ease-in-out cursor-pointer hover:-translate-y-2 border-2 border-gray-600`}
                     style={{ 
                         borderColor: null, 
                         transition: 'box-shadow 0.3s ease',

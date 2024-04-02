@@ -18,7 +18,7 @@ const Navbar = () => {
       <div className="lg:hidden">
   {!showSidebar && (
     <button onClick={toggleSidebar}>
-      <FaBars className="text-gray-700 text-gray-300" />
+      <FaBars className=" text-gray-300" />
     </button>
   )}
 </div>
@@ -26,16 +26,16 @@ const Navbar = () => {
 
       {/* Navbar Links (visible on larger screens) */}
       <nav className="hidden lg:flex gap-4 lg:space-x-4">
-        <a href="#Home" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
+        <a href="#Home" className="flex items-center  text-gray-300 hover:text-cyan-400 ">
           <FaHome className="mr-2" /> Home
         </a>
-        <a href="#Projects" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
+        <a href="#Projects" className="flex items-center  text-gray-300 hover:text-cyan-400 ">
           <FaBriefcase className="mr-2" /> Projects
         </a>
-        <a href="#Tech" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
+        <a href="#Tech" className="flex items-center  text-gray-300 hover:text-cyan-400 ">
           <FaCode className="mr-2" /> Tech
         </a>
-        <a href="#Contact" className="flex items-center text-gray-700 text-gray-300 hover:text-gray-900 hover:text-gray-100">
+        <a href="#Contact" className="flex items-center  text-gray-300 hover:text-cyan-400 ">
           <FaEnvelope className="mr-2" /> Contact
         </a>
       </nav>
@@ -43,24 +43,24 @@ const Navbar = () => {
       {/* Sidebar (visible on mobile when toggled) */}
       {showSidebar && (
         <div className="lg:hidden  absolute top-0 right-0 w-full h-full bg-gray-100 bg-opacity-50 z-10">
-          <div className="absolute top-0 right-0 w-64 h-full bg-white shadow-lg">
+          <div className="absolute top-0 right-0 w-64 h-auto bg-white shadow-lg">
             <div className="flex justify-between items-center px-4 py-2">
               <h2 className="text-lg font-semibold">Menu</h2>
               <button onClick={toggleSidebar}>
-                <FaTimes className="text-gray-700 text-black " />
+                <FaTimes className=" text-black " />
               </button>
             </div>
             <nav className="flex flex-col py-4 gap-4 ml-4 space-y-2">
-              <a href="#Home" className="flex items-center text-gray-700 hover:text-gray-900">
+              <a href="#Home" className="flex items-center  hover:text-cyan-400">
                 <FaHome className="mr-2" /> Home
               </a>
-              <a href="#Projects" className="flex items-center text-gray-700 hover:text-gray-900">
+              <a href="#Projects" className="flex items-center  hover:text-cyan-400">
                 <FaBriefcase className="mr-2" /> Projects
               </a>
-              <a href="#Tech" className="flex items-center text-gray-700 hover:text-gray-900">
+              <a href="#Tech" className="flex items-center  hover:text-cyan-400">
                 <FaCode className="mr-2" /> Tech
               </a>
-              <a href="#Contact" className="flex items-center text-gray-700 hover:text-gray-900">
+              <a href="#Contact" className="flex items-center  hover:text-cyan-400">
                 <FaEnvelope className="mr-2" /> Contact
               </a>
             </nav>

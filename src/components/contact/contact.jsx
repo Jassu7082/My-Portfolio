@@ -38,7 +38,7 @@ const FeedbackForm = () => {
         }
     }    
     return (
-        <div id="contact" className="flex flex-col justify-center items-center mt-10">
+        <div id="Contact" className="flex flex-col justify-center items-center mt-10">
             <Toaster />
             <div style={{ opacity: 1, transform: 'none' }}>
                 <div className="flex w-fit justify-center bg-[#ffffff] bg-opacity-[0.16] py-2 px-6 rounded-[25px] hover:border-zinc-400 duration-300 ease-in mb-6 border-[1.5px] border-[#515151] backdrop-filter backdrop-blur-2xl">

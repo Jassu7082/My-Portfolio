@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { db } from './config/firebase';
+import { db } from '../../config/firebase';
 import { addDoc, collection } from 'firebase/firestore';
 import toast, { Toaster } from 'react-hot-toast';
 

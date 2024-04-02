@@ -1,7 +1,7 @@
 
-import instagram from "./assets/instagram-color_icon.png";
-import github from "./assets/github_icon.png";
-import linkedin from "./assets/linkedin-color_icon.png";
+import instagram from "../../assets/instagram-color_icon.png";
+import github from "../../assets/github_icon.png";
+import linkedin from "../../assets/linkedin-color_icon.png";
 
 const social = [
     { name: 'Instagram', imageSrc: instagram, altText: 'Instagram', color: '#C13584', url: 'https://www.instagram.com/jaswanth_jsr' },

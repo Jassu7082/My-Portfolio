@@ -1,12 +1,12 @@
-import Navbar from "./DNavbar.jsx"
-import Header from "./Header.jsx"
-import About from "./about.jsx"
-import TechnologiesContainer from "./tech.jsx"
-import Project from "./project.jsx"
-import ToolContainer from "./tools.jsx"
-import SocialContainer from "./social.jsx"
-import Contact from "./contact.jsx"
-import ContactFooter from "./footer.jsx"
+import Navbar from "./components/Navbar/DNavbar.jsx"
+import Header from "./components/Home/Header.jsx"
+import About from "./components/about/about.jsx"
+import TechnologiesContainer from "./components/tech/tech.jsx"
+import Project from "./components/project/project.jsx"
+import ToolContainer from "./components/tech/tools.jsx"
+import SocialContainer from "./components/contact/social.jsx"
+import Contact from "./components/contact/contact.jsx"
+import ContactFooter from "./components/footer/footer.jsx"
 function App() {
   return (
     <>

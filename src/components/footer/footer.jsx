@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from "./assets/logo.png"
+import logo from "../../assets/logo.png"
 const ContactFooter = () => {
     return (
         <footer className="bg-white dark:bg-gray-600 mt-10">

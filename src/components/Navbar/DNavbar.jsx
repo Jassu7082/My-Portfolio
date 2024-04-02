@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaHome, FaBriefcase, FaCode, FaEnvelope, FaTimes } from 'react-icons/fa';
-import logo from './assets/logo.png';
+import logo from '../../assets/logo.png';
 
 const Navbar = () => {
   const [showSidebar, setShowSidebar] = useState(false);

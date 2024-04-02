@@ -1,9 +1,9 @@
-import vscode from "./assets/vscode.webp"
-import git from "./assets/git.webp"
-import figma from "./assets/figma.webp"
-import postman from "./assets/postman.webp"
-import hyper from "./assets/hyper.webp"
-import blender from "./assets/Blender.png"
+import vscode from "../../assets/vscode.webp"
+import git from "../../assets/git.webp"
+import figma from "../../assets/figma.webp"
+import postman from "../../assets/postman.webp"
+import hyper from "../../assets/hyper.webp"
+import blender from "../../assets/Blender.png"
 const tools = [
     { name: 'Vscode', imageSrc: vscode, altText: 'Visual Studio Code', color: '#007ACC' },
     { name: 'Git', imageSrc: git, altText: 'Git', color: '#F05032' },

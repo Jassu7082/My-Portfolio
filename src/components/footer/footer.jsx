@@ -8,7 +8,7 @@ const ContactFooter = () => {
                     <div className="">
                         <a href="#" className="flex items-center">
                             <img src={logo} className="h-8 me-3 rounded-full" alt="FlowBite Logo" />
-                            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Jaswanth</span>
+                            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">Jaswanth</span>
                         </a>
                     </div>
                 </div>

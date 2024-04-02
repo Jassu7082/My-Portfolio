@@ -10,10 +10,10 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex border-b-2 border-white bg-slate-900 z-10 items-center justify-between px-4 sticky top-0 py-4 border-slate-300/10 lg:mx-0">
+    <div className="flex border-b-2 border-[slate-100] bg-slate-900 z-10 items-center justify-between px-4 sticky top-0 py-4 border-slate-300/10 lg:mx-0">
       <div className="flex items-center gap-2 pl-12"> 
         <img className="border h-12 w-12 rounded-full" src={logo} alt="Logo" />
-        <p className="text-2xl font-bold text-slate-900 text-slate-100 ">Jaswanth.dev</p>
+        <p className="text-2xl font-bold  text-slate-100 ">Jaswanth.dev</p>
       </div>
       <div className="lg:hidden">
   {!showSidebar && (

@@ -66,7 +66,7 @@ const TechnologyCard = ({ name, imageSrc, altText, color }) => {
   };
 const TechnologiesContainer = () => {
   return (
-    <div id="Tech" className="flex flex-col items-center">
+    <div id="Skills" className="flex flex-col items-center">
       <div style={{ opacity: 0.975698, transform: 'none' }}>
         <div className="flex w-fit justify-center bg-[#ffffff] bg-opacity-[0.16] py-2 px-6 rounded-3xl hover:border-zinc-500 transition-all duration-300 ease-in-out my-[80px] border-[1.5px] border-[#515151] backdrop-filter backdrop-blur-2xl">
           <div className="flex justify-center items-center gap-2">

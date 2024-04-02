@@ -44,7 +44,9 @@ const callouts = [
 
 const Project = () => {
   return (
-    <div id="Projects" className="flex m-10  items-center">
+    <div>
+    <h1 id="Projects" className="text-6xl text-center font-bold mb-4">Projects</h1>
+    <div  className="flex m-10  items-center">
       <div >
         {callouts.map((project, index) => (
           <Card
@@ -57,6 +59,7 @@ const Project = () => {
         ))}
 
       </div>
+    </div>
     </div>
   );
 };

@@ -2,8 +2,9 @@ import React from 'react';
 import './about.css';
 const About = () => {
     return (
+        <div>
         <div className="flex justify-center items-center h-screen ">
-                <div className="pyramid-loader dont_need">
+                <div className="pyramid-loader ">
                     <div className="wrapper ">
                         <span className="side side1"></span>
                         <span className="side side2"></span>
@@ -21,6 +22,7 @@ const About = () => {
                     engineering student currently pursuing a Bachelor of Technology degree at <b>SVNIT</b>. <br></br>My passion lies in the realm of full stack web development. </p>
 
             </div>
+        </div>
         </div>
     );
 };

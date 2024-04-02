@@ -4,7 +4,7 @@ const About = () => {
     return (
         <div>
         <div className="flex justify-center items-center h-screen ">
-                <div className="pyramid-loader ">
+                <div className="pyramid-loader dont_need">
                     <div className="wrapper ">
                         <span className="side side1"></span>
                         <span className="side side2"></span>

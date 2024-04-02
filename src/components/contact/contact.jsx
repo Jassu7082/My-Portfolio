@@ -12,21 +12,31 @@ const FeedbackForm = () => {
     const contactCollection=collection(db,"contact"); 
     const Submit = async () => {
         console.log(newName, newEmail, newPhoneno, newMessage);
-        if (newName != '' || newEmail != '' || newPhoneno != '' || newMessage != '') {
-        try {
-            await addDoc(contactCollection, { Name: newName, Email: newEmail, Phoneno: newPhoneno, Message: newMessage });
-            setNewName('');
-            setNewEmail('');
-            setNewPhoneno('');
-            setNewMessage('');
-            toast.success("Contact information submitted successfully, will reach you soon");
-        } catch (err) {
-            toast.error("Something Went Wrong.Please Try Again");
+        const nameRegex = /^[A-Za-z]+$/;
+        const emailRegex = /\S+@\S+\.\S+/;
+        const phoneRegex = /^\+?[0-9]+$/;
+    
+        if (!nameRegex.test(newName.trim())) {
+            toast.error("Please enter a valid name with letters only");
+        } else if (!emailRegex.test(newEmail.trim())) {
+            toast.error("Please enter a valid email address");
+        } else if (!phoneRegex.test(newPhoneno.trim())) {
+            toast.error("Please enter a valid phone number  consisting of digits only");
+        } else if (newMessage.trim() === '') {
+            toast.error("Please enter your feedback message");
+        } else {
+            try {
+                await addDoc(contactCollection, { Name: newName, Email: newEmail, Phoneno: newPhoneno, Message: newMessage });
+                setNewName('');
+                setNewEmail('');
+                setNewPhoneno('');
+                setNewMessage('');
+                toast.success("Contact information submitted successfully, will reach you soon");
+            } catch (err) {
+                toast.error("Something Went Wrong. Please Try Again");
+            }
         }
-    } else{
-        toast.error("Please fill all the fields");
-    }
-    }
+    }    
     return (
         <div id="contact" className="flex flex-col justify-center items-center mt-10">
             <Toaster />
